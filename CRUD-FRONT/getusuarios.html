@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar Todos os Registros de Usuários Cadastrados no sistema</title>
+    <link rel="stylesheet" href="styleget.css">
+   
+</head>
+
+
+
+<body>
+   <div class="logo">
+    <img src="logodaminhapi.png" alt="Java Logo" width="200">
+    <h1>Listar Todos os Registros de Usuários Cadastrados no sistema</h1>
+    <p class="p-s">Consumindo a API de Usuários utilizando FETCH</p>
+    <a href="index.html" class="btn">Voltar</a>
+    <div class="table-responsive">
+   <table id="tableResponse" class="table table-bordered table-striped">
+        <thead><!--grupo de cabeçalhos presentes na tabela-->
+            <tr> <!--tr significa as linhas da tabela-->
+                <th>Id</th><!--th significa cabeçalho da tabela-->
+                <th>Nome</th>
+                <th>CPF</th>
+                <th>Email</th>
+                <th>Rua</th>
+                <th>Bairro</th>
+                <th>Cidade</th>
+                <th>Estado</th>
+                <th>Senha</th>
+                
+            </tr>
+           
+        </thead>
+     <tbody><!--grupo de corpo da tabela-->
+        <!--Os dados serão preenchidos aqui via JS-->
+       <tr>
+        <td colspan="8" class="text-center">Carregando...</td>  <!--td significa tabela de dados-->
+       </tr>
+        </tbody>
+   </table>
+
+    </div>
+
+
+
+
+
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+    fetch('http://localhost:8083/usuarios/')
+    .then(response=>
+        response.json()
+    )
+    .then(data=>{
+        console.log(data); // Exibe os dados no console para depuração
+        const tableBody = document.querySelector('#tableResponse tbody');
+        tableBody.innerHTML = ''; // Limpa o conteúdo da tabela antes de preencher com novos dados
+
+        data.forEach(usuario => {
+            const row = tableBody.insertRow();
+            
+                row.insertCell(0).textContent = usuario.usuarioId;
+                row.insertCell(1).textContent = usuario.nome;
+                row.insertCell(2).textContent = usuario.cpf;
+                row.insertCell(3).textContent = usuario.email;
+                row.insertCell(4).textContent = usuario.Rua;
+                row.insertCell(5).textContent = usuario.bairro;
+                row.insertCell(6).textContent = usuario.cidade;
+                row.insertCell(7).textContent = usuario.Estado;
+                row.insertCell(8).textContent = usuario.senha;
+                
+        });//ctrl + d seleciona palavras iguais, ctrl + shift + l seleciona todas as palavras iguais
+    })
+    .catch(error=>{
+        console.error("Erro ao buscar os usuários:",error);
+    });
+});
+
+
+
+
+
+</script>
+
+</body>
+</html>

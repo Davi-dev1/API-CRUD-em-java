@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleconta.css">
+    <title>Minha Conta</title>
+     
+</head>
+
+<header>
+    <h2>Olá, <span id="nome-usuario">Usuário</span>! Bem vindo de volta!</h2>
+   <h1>Seus dados cadastrados no sistema:</h1>
+</header>
+
+<body>
+   <div class="tabela">
+    <table id="tabledata" class="table table-bordered table-striped">
+        <thead><!--grupo de cabeçalhos presentes na tabela-->
+            <tr> <!--tr significa as linhas da tabela-->
+                
+                <th>Nome</th>
+                <th>CPF</th>
+                <th>Email</th>
+                <th>Rua</th>
+                <th>Bairro</th>
+                <th>Cidade</th>
+                <th>Estado</th>
+                <th>Senha</th>
+                
+            </tr>
+           
+        </thead>
+     <tbody><!--grupo de corpo da tabela-->
+        <!--Os dados serão preenchidos aqui via JS-->
+       <tr>
+        <td colspan="8" class="text-center">Carregando...</td>  <!--td significa tabela de dados-->
+       </tr>
+        </tbody>   
+    
+    </table>
+   </div>
+   <div id="seletores">
+         <button onclick="logout()" class="btn-logout">Sair</button>
+        <button onclick="atualizar()" id="atualizar">Atualizar</button>
+        <button onclick="apagar()"id="apagar">Apagar</button>
+   </div>
+
+
+<script>
+    
+    let usuarioIdLogado =null; // Variável para armazenar o ID do usuário logado
+if(localStorage.getItem('usuarioLogado') !=='true'){
+    alert("Acesso negado! Você precisa estar logado para acessar esta página.");
+    window.location.href = 'entrar.html'; // Redireciona para a página de
+}
+const nomeUsuario = localStorage.getItem('nomeUsuario');
+if(nomeUsuario){
+    document.getElementById('nome-usuario').textContent = nomeUsuario;
+}
+
+
+function logout() {
+    localStorage.removeItem('usuarioLogado'); // Remove o item do localStorage
+    localStorage.removeItem('emailUsuario'); // Remove o email do usuário do localStorage
+    alert('Você foi deslogado com sucesso!');
+    window.location.href = 'entrar.html'; // Redireciona para a página de login
+}
+
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const emailLogado = localStorage.getItem('emailUsuario');
+        fetch('http://localhost:8083/usuarios/')
+            .then(response => response.json())
+            .then(data => {
+                const tableBody = document.querySelector('#tabledata tbody');
+                tableBody.innerHTML = ''; // Limpa o conteúdo atual da tabela
+
+            const usuarioLogado = data.find(usuario => usuario.email === emailLogado|| usuario.cpf === emailLogado);
+
+            if(usuarioLogado) {
+
+console.log("Objeto usuário completo vindo do banco : ", usuarioLogado); // Adicione este log para verificar o objeto completo do usuário
+
+           usuarioIdLogado = usuarioLogado.usuarioId||usuarioLogado.id; // Armazena o ID do usuário logado
+console.log('ID do usuário logado:', usuarioIdLogado); // Adicione este log para verificar o ID do usuário
+
+
+
+
+           const row =document.createElement('tr');
+           row.innerHTML = `
+                
+                <td>${usuarioLogado.nome}</td>
+                <td>${usuarioLogado.cpf}</td>
+                <td>${usuarioLogado.email}</td>
+                <td>${usuarioLogado.Rua}</td>
+                <td>${usuarioLogado.bairro}</td>
+                <td>${usuarioLogado.cidade}</td>
+                <td>${usuarioLogado.Estado}</td>
+    
+                <td><small style="color: gray;">${usuarioLogado.senha.substring(0,15)}...</small></td>
+`;
+                tableBody.appendChild(row);
+            } else {
+                tableBody.innerHTML = '<tr><td colspan="9" class="text-center">Nenhum dado encontrado para o usuário logado.</td></tr>';
+
+
+            }
+        })
+
+            .catch(error => {
+                console.error('Erro ao buscar os dados do usuário:', error);
+                const tableBody = document.querySelector('#tabledata tbody');
+                tableBody.innerHTML = '<tr><td colspan="9" class="text-center">Erro ao carregar os dados.</td></tr>';
+            });
+    });
+
+
+    function apagar() {
+
+   if(!usuarioIdLogado) {
+        alert('Não foi possível identificar o usuário logado.');
+        return;
+    }
+
+    if(!confirm('Tem certeza que deseja apagar sua conta? Esta ação não pode ser desfeita.')) {
+        return;
+
+    }
+        fetch('http://localhost:8083/usuarios/' + usuarioIdLogado, {
+            method: 'DELETE'
+        })
+        .then(response => {
+            if (response.ok) {
+                alert('Conta apagada com sucesso!');
+                logout(); // Chama a função de logout para limpar o localStorage e redirecionar
+                window.location.href = 'index.html'; // Redireciona para a página inicial
+            } else {
+                alert('Erro ao apagar a conta.');
+            }
+        })
+        .catch(error => {
+            console.error('Erro ao apagar a conta:', error);
+            alert('Erro ao apagar a conta.');
+        });
+    }
+
+    function atualizar() {
+        if(!usuarioIdLogado) {
+            alert('Não foi possível identificar o usuário logado.');
+            return;
+        }
+        window.location.href = 'atualizar.html?usuarioId=' + usuarioIdLogado; // Redireciona para a página de atualização com o ID do usuário
+    }
+
+</script>
+
+</body>
+</html>

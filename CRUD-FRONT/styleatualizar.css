@@ -1,0 +1,49 @@
+body{
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #040301;
+      color:white
+}
+.form-container {
+    background-color: #FFAB00;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 200px;
+}
+form-container h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #040301;
+}
+input{
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+}
+button{
+    background-color: gray;
+    color: #040301;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 50%;
+}
+button:hover{
+    background-color: black;
+    color: white;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    
+}
+.logo{
+    text-align:center;
+    margin-top:20px;
+
+}
