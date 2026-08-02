@@ -56,3 +56,13 @@ button:hover{
     color: #040301;
     transition: all 0.3s ease;
 }
+
+
+@keyframes entradaSuave {
+            0% { transform: scale(0.5); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        } 
+
+        #confirmar:hover{
+            background: red !important; transform: translateY(-2px);
+        }

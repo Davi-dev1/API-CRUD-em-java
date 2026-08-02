@@ -73,7 +73,10 @@ document.addEventListener('DOMContentLoaded',function(){
                 row.insertCell(6).textContent = usuario.cidade;
                 row.insertCell(7).textContent = usuario.Estado;
                 row.insertCell(8).textContent = usuario.senha;
-                
+                console.log("quantidade de usuarios cadastrados na plataforma : " +data.length)
+                // for(var dados in usuario){
+                //     console.log("objetos carregados com meu uso do laço for in... : " +dados);
+                // }
         });//ctrl + d seleciona palavras iguais, ctrl + shift + l seleciona todas as palavras iguais
     })
     .catch(error=>{

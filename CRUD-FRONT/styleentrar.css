@@ -45,3 +45,20 @@ button:hover{
     font-weight: bold;
     
 }
+
+@keyframes entradaSuave {
+            0% { transform: scale(0.5); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        } 
+
+        #btns:hover{
+            background: red !important; transform: translateY(-2px);
+        }
+        #btns{
+            background:cornflowerblue ;
+            font-weight: bold;
+        }
+
+        #certo{
+            color: green;
+        }

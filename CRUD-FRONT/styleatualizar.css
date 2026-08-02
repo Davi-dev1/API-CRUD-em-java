@@ -47,3 +47,31 @@ button:hover{
     margin-top:20px;
 
 }
+
+
+@keyframes entradaSuave {
+            0% { transform: scale(0.5); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        } 
+
+        #btns:hover,#confirmar:hover,#cancelar:hover{
+            background: red !important; transform: translateY(-2px);
+        }
+        #btn{
+            background:cornflowerblue ;
+            font-weight: bold;
+        }
+
+        #certo{
+            color: green;
+        }
+        #confirmar{
+         background:cornflowerblue ;
+            font-weight: bold;
+            width: 100%;
+            margin-bottom: 20PX;   
+        }
+        #cancelar{
+            background:cornflowerblue ;
+            font-weight: bold;
+        }
