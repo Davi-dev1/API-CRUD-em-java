@@ -9,5 +9,17 @@ Criei uma API em java utilizando o spring Framework aonde permite cadastro de us
 width="200" ><br></div><i><p>Spring Boot</p></i><br><hr>
 
 ## 3 - Mysql Workbranch
-<div align = "left"><img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2zyrEJcQqgN4UUKfP67KKq8Y3e1ChO5TbHY6OJqfRzVp1o_QwzdZHWDdoww&s"
+<div align = "left"><img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLMozJ9kaLMmnMrCxM9FwZcoNqFUf6OfWrZ6XX6-EKLAHt0Sz2gG5jP2Bv1dU&s"
 width="200" ><br></div><i><p>Mysql WorkBracnh</p></i><br><hr>
+
+## 4 - Javascript
+<div align = "left"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi7ADAvy8O93mFn4mpMAyS-0ciJHnmm7VQiJvGv2x2YCZppxyY9uHO47oB6mA&s"
+ width="200" ><br></div><i><p>Javascript</p></i><br><hr>
+
+
+## 5 - HTML 
+<div align ="left"><img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuChnkhlBaXu7irFEL_UT5jqsGGX1br6MqkQ5b1KHhFTvKtQKFngdOVv3FLg&s"
+width="200" ><br></div><i><p>HTML</p></i><br><hr>
+
+## 6 - CSS
+<div> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkvgH89D0-ZrlQCI8K4nJaeycA4GFWcRB298WjWbauDRbmyipWn5DHy3zCcQ&s" width="200"><br></div><i><p>CSS</p></i><br>
