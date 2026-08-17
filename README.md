@@ -3,7 +3,7 @@ Criei uma API em java utilizando o spring Framework aonde permite cadastro de us
 <div id = "linguagens">
    
 # Linguagens :
-<div id = "one" align="center"  display="inline-block">
+<div id = "one" align="center"  display="flex">
 
 ## 1 - Java
 <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdnD_HC-WuijFtW7WrhCYK5hpdT36e3tdIoO0q1ikYODr7h1l6sBFM3MYrpw&s" width="200"><br></div><i><p>Java</p></i><hr><br>
