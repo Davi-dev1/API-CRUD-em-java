@@ -37,3 +37,6 @@ Criei uma API CRUD(Create,Read,Update e Delete) em java utilizando o spring Fram
 <h3>O CRUD é um conceito de Programação que visa trabalhar e orquestrar dados e informações dentro de sistemas web , com ele é possível gerenciar dados e informações de usuários, e permitir que quem o usar possa ter ações dentro do sistema. O "C" vem de create ou seja , o create é o momento em que o usuário seta dados, o "R" vem de read que por sua vez, permite a leitura de dados e informações de um determinado usuário, o "U" vem de update que visa permitir a atualização de dados  e por fim o "D" vem de delete o nome já é autoexplicativo, ele permite a exclusão de dados do usuário caso ele queira.</h3><br>
 <img width="100%" src="https://capsule-render.vercel.app/api?type=blur&height=453&color=gradient&text=CRUD&section=header&reversal=true"/>
 </div>
+
+# Métodos
+
