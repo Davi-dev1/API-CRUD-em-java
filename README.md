@@ -39,4 +39,4 @@ Criei uma API CRUD(Create,Read,Update e Delete) em java utilizando o spring Fram
 </div>
 
 # Métodos
-
+<p>O desenvolvimento do projeto inciou a partir de protótipos realizados no Figma visando o front-end,após isso inciei o processo da criação da API </p>
