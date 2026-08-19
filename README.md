@@ -1,33 +1,39 @@
 # API CRUD em Java
-Criei uma API em java utilizando o spring Framework aonde permite cadastro de usuarios, leitura de dados , exclusão de dados e atualização de dados , tecnologias utilizadas foram : Java, Javascript, Mysql , Html e CSS
+Criei uma API CRUD(Create,Read,Update e Delete) em java utilizando o spring Framework aonde permite cadastro de usuarios, leitura de dados , exclusão de dados  atualização de dados e criptografia de senhas. 
 
-   <div align="center" style="display:inline-block"><br>
+   <div align="center" style= "display: inline_block"><br>
       
 # Linguagens :
 
+<table>
+  <tr >
 
-## 1 - Java
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdnD_HC-WuijFtW7WrhCYK5hpdT36e3tdIoO0q1ikYODr7h1l6sBFM3MYrpw&s" width="200"><i><p>Java</p></i>
+   <td align="center" >
+<img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Java-Light.svg" width="65" height="65"/><br><sub><i>Java</i></sub>
+   </td>
+<td align = "center" width="100">
+<img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Spring-Dark.svg" width="65" height="65"/><br><sub><i>Spring - Web</i></sub>
+</td>
+<td align = "center" width="100">
+<img src="https://github.com/tandpfun/skill-icons/blob/main/icons/MySQL-Light.svg" width="65" height="65"/><br><sub><i>MySql WorkBranch</i></sub>
+</td>
+<td align = "center" width="100">
+<img src="https://github.com/tandpfun/skill-icons/blob/main/icons/JavaScript.svg" width="65" height="65"/><br><sub><i>Javascript</i></sub>
+</td>
+<td align = "center" width="100">
+<img src="https://github.com/tandpfun/skill-icons/blob/main/icons/HTML.svg" width="65" height="65"/><br><sub><i>HTML</i></sub>
+</td>
+<td align = "center" width="100">
+<img src="https://github.com/tandpfun/skill-icons/blob/main/icons/CSS.svg" width="65" height="65"/><br><sub><i>CSS</i></sub>
+</td>
+</tr>
+</table>
+</div>
+<br>
 
-## 2 - Spring Boot
-<img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2sSdZPmVNmuFcft08D7Z7cKaPhNhJ_wDLQohJoTZf2yA-yvtTUSXlGPe_8GU&s"
-width="200" ><i><p>Spring Boot</p></i>
-
-## 3 - Mysql Workbranch
- <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLMozJ9kaLMmnMrCxM9FwZcoNqFUf6OfWrZ6XX6-EKLAHt0Sz2gG5jP2Bv1dU&s"
-width="200" ><i><p>Mysql WorkBracnh</p></i>
-
-
-  
-  ## 4 - Javascript
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi7ADAvy8O93mFn4mpMAyS-0ciJHnmm7VQiJvGv2x2YCZppxyY9uHO47oB6mA&s"
- width="200" ><i><p>Javascript</p></i>
-
-
-## 5 - HTML 
-<img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuChnkhlBaXu7irFEL_UT5jqsGGX1br6MqkQ5b1KHhFTvKtQKFngdOVv3FLg&s"
-width="200" ><i><p>HTML</p></i>
-
-## 6 - CSS
- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkvgH89D0-ZrlQCI8K4nJaeycA4GFWcRB298WjWbauDRbmyipWn5DHy3zCcQ&s" width="200"><i><p>CSS</p></i>
+<div align="center">
+   
+## O que é  o metódo CRUD ?
+<h3>O CRUD é um conceito de Programação que visa trabalhar e orquestrar dados e informações dentro de sistemas web , com ele é possível gerenciar dados e informações de usuários, e permitir que quem o usar possa ter ações dentro do sistema. O "C" vem de create ou seja , o create é o momento em que o usuário seta dados, o "R" vem de read que por sua vez, permite a leitura de dados e informações de um determinado usuário, o "U" vem de update que visa permitir a atualização de dados  e por fim o "D" vem de delete o nome já é autoexplicativo, ele permite a exclusão de dados do usuário caso ele queira.</h3><br>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=blur&height=453&color=gradient&text=CRUD&section=header&reversal=true"/>
 </div>
