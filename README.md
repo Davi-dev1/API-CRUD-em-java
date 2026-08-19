@@ -1,5 +1,5 @@
 # API CRUD em Java
-Criei uma API CRUD(Create,Read,Update e Delete) em java utilizando o spring Framework aonde permite cadastro de usuarios, leitura de dados , exclusão de dados  atualização de dados e criptografia de senhas. 
+Criei uma API CRUD(Create,Read,Update e Delete) em java utilizando o spring Framework aonde permite cadastro de usuarios, leitura de dados , exclusão de dados, atualização de dados e criptografia de senhas. 
 
    <div align="center" style= "display: inline_block"><br>
       
